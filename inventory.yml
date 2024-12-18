@@ -1,0 +1,16 @@
+all:
+  children:
+    nexus:
+      hosts:
+        nexus9k-1:
+          ansible_host: 10.0.0.20
+          ansible_user: admin
+          ansible_password: test
+          ansible_network_os: nxos
+          ansible_connection: network_cli
+        nexus9k-2:
+          ansible_host: 10.0.0.21
+          ansible_user: admin
+          ansible_password: test
+          ansible_network_os: nxos
+          ansible_connection: network_cli
