@@ -1,0 +1,5 @@
+- name: Deploy VLAN configuration on Nexus
+  hosts: nexus
+  gather_facts: no
+  roles:
+    - nexus_vlan
